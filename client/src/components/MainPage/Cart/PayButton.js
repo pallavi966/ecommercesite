@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {useSelector} from 'react-redux'
-const url = 'https://ecommerceappsite.herokuapp.com/api'
+const url = '/api'
 // const url = 'http://localhost:5000/api'
 const PayButton = (cart) => {
 
