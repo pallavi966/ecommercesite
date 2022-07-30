@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const getOrders = (id) => dispatch => {
     dispatch(setOrdersLoading());
-    axios.get(`http://localhost:5000/api/order/${id}`)
+    axios.get(`${CLIENT_URL}/api/order/${id}`)
         .then(res => dispatch({
             type: "GET_ORDERS",
             payload: res.data
@@ -12,7 +12,7 @@ export const getOrders = (id) => dispatch => {
 }
 
 export const checkout = (id, source) => dispatch => {
-    axios.post(`http://localhost:5000/api/order/${id}`, {source})
+    axios.post(`/api/order/${id}`, {source})
         .then(res => dispatch({
             type: "CHECKOUT",
             payload: res.data
