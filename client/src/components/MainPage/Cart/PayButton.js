@@ -1,6 +1,7 @@
 import axios from 'axios'
 import {useSelector} from 'react-redux'
-const url = 'http://localhost:5000/api'
+const url = '/api'
+// const url = 'http://localhost:5000/api'
 const PayButton = (cart) => {
 
     // const {user} = useSelector((state)=>state.auth)
