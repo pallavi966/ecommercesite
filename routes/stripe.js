@@ -20,8 +20,8 @@ router.post("/create-checkout-session", async (req, res) => {
           }],
           mode: 'payment',
 
-          success_url: '/checkout-success',
-          cancel_url: '/cart',
+          success_url: 'https://ecommerceappsite.herokuapp.com/checkout-success',
+          cancel_url: 'https://ecommerceappsite.herokuapp.com/cart',
         })
       
         res.send({url: session.url})
